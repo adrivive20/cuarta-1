@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           {/* Coloca /public/logo.png si tenés el archivo */}
-          <Image src="/logo.png" alt="My Sweet Time" width={36} height={36} priority />
+          <Image src="/logo.png" alt="My Sweet Time" width={150} height={150} priority />
           <span className="font-bold text-lg text-brand-olive">My Sweet Time</span>
         </Link>
 

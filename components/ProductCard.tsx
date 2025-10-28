@@ -10,7 +10,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <img
         src={product.image}
         alt={product.name}
-        className="rounded-xl aspect-video object-cover mb-3 w-full h-auto"
+        className="rounded-xl aspect-square object-cover mb-3 w-full"
       />
       <h3 className="font-semibold text-lg text-brand-olive">{product.name}</h3>
       <p className="text-sm text-brand-olive/80 mb-4">₡{product.price.toLocaleString("es-CR")}</p>
