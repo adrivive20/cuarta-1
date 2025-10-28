@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* 🎨 Paleta My Sweet Time */
+@theme inline {
+  --color-brand-cream:  #DCC9B0;
+  --color-brand-caramel:#A7805A;
+  --color-brand-mocha:  #81634A;
+  --color-brand-sage:   #AEA781;
+  --color-brand-olive:  #555842;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* 🌞 Modo claro por defecto */
+:root {
+  --background: var(--color-brand-cream);
+  --foreground: var(--color-brand-olive);
+}
+
+/* 🩶 Estilos globales */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 💫 Ajustes opcionales para enlaces, botones y scroll */
+a {
+  color: var(--color-brand-caramel);
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--color-brand-mocha);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-brand-sage);
+  border-radius: 4px;
+}
